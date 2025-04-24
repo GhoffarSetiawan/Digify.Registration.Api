@@ -1,0 +1,72 @@
+@Digify.Registration.Api_HostAddress = https://localhost:7228/v1
+
+GET {{Digify.Registration.Api_HostAddress}}/companies/
+Accept: application/json
+
+
+
+###
+
+
+GET {{Digify.Registration.Api_HostAddress}}/Companies?name=PT&page=1&pageSize=50
+Accept: application/json
+
+
+
+###
+
+GET {{Digify.Registration.Api_HostAddress}}/companies/00000000-0000-0000-0000-000000000001
+Accept: application/json
+
+
+
+###
+
+
+GET {{Digify.Registration.Api_HostAddress}}/companies/bc720da0-ee66-46b9-8d8f-427188582258
+Accept: application/json
+
+
+
+###
+
+POST {{Digify.Registration.Api_HostAddress}}/companies/
+Content-Type: application/json
+{
+  "CompanyName":"PT ABC123",
+  "NPWP":"1122334455",
+  "DirectorName":"Setia",
+  "PICName":"Setiawan",
+  "Email":"setia@abc123.com",
+  "PhoneNumber":"08131098765",
+  "DocumentNPWPName":"FileNPNW001.pdf",
+  "DocumentPowerOfAttorneyName":"FileAttorney001.pdf",
+  "DocumentNPWP":"",
+  "DocumentPowerOfAttorney":""
+}
+###
+
+
+PUT {{Digify.Registration.Api_HostAddress}}/companies/DD63B518-94A2-4FCD-A520-EE28F2288664
+Content-Type: application/json
+{
+   "CompanyName":"PT ABC123 XX",
+  "NPWP":"1122334455 XX",
+  "DirectorName":"Setia XX",
+  "PICName":"Setiawan XX",
+  "Email":"setia@abc123xx.com",
+  "PhoneNumber":"0813109876511",
+  "DocumentNPWPName":"FileNPNW001XX.pdf",
+  "DocumentPowerOfAttorneyName":"FileAttorney001XX.pdf",
+  "DocumentNPWP":"",
+  "DocumentPowerOfAttorney":""
+}
+###
+
+
+DELETE {{Digify.Registration.Api_HostAddress}}/companies/2714fc82-6e5b-4436-99b5-87a5ec9cd60c
+Content-Type: application/json
+
+
+
+###
